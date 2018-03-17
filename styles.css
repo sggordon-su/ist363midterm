@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+.home{
+    margin: 0;
+    padding: 0;
+    background: url(images/home.jpg) center top;
+    background-size: cover;
+}
+
+.navigation{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home .navigation h1{
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet version */
+@media screen and (max-width:768px) { 
+
+}
+
+/* mobile version */
+@media screen and (max-width:540px) {
+
+}
+
