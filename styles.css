@@ -1,49 +1,88 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Inconsolata|Poppins');
 /*
-font-family: 'Merriweather', serif;
-font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Crimson Text', serif;
 */
 
 .home{
     margin: 0;
     padding: 0;
-    background: url(images/home.jpg) center top;
-    background-size: cover;
+    background: url(images/home.jpg) center fixed; background-size: cover;
+    font-family: 'Crimson Text', serif;
 }
 
 .navigation{
-    font-family: 'Oswald', sans-serif;
     display: flex;
-    justify-content: flex-end;
+    position: relative;
 }
 
 .home .navigation h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    font-weight: 700;
     color: #fff;
+    margin: 0px 10px;
+}
 
+.home .navigation a{
+    color: #fff;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.home .navigation ul{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.home768, .home540{display: none;}
+
+@media screen and (max-width: 992px) {
+    .home .navigation ul{font-size: 2vw; margin-top: 6px;}
+
+}
+
+/* Home - 0-768px */
+@media screen and (max-width: 768px) {
+    .home{background-image: none;}
+    .navigation{display: block; text-align: center; z-index: 9999; }
+    .home .navigation h1{
+        font-size: 6.5vw;
+        display:inline;
+        margin: 0px 10px;
+    }
+    .home .navigation ul{
+        justify-content: center;
+        font-size: 19px;
+    }
+    .home768{
+        display: initial;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 0px;
+    }
+    .home540{display: none;}
+
+}
+
+@media screen and (max-width: 540px) {
+    .home .navigation h1{font-size: 10vw; display: block;}
+    .home768 {display: none;}
+    .home540 {
+        display: initial;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 0px;
+    }
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet version */
-@media screen and (max-width:768px) { 
-
-}
-
-/* mobile version */
-@media screen and (max-width:540px) {
-
-}
 
